@@ -1,3 +1,30 @@
+@import 'mixins';
+
+html, body {
+    margin-top: 0;
+}
 .content {
     height: 100vh;
+    @include backgroundImage('https://farm4.staticflickr.com/3262/3159517227_65c6a84332_b.jpg');
+}
+
+footer {
+
+    a {
+        text-decoration: none !important;
+        color: lightgray !important;
+        @include transitions(0.5s);
+    }
+
+    a:hover {
+        color: green !important;
+    }
+
+    background-color: rgba(0,0,0,0.5);
+    color: lightgray;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
 }

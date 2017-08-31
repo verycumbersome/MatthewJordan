@@ -1,4 +1,38 @@
-/* line 1, ../scss/main.scss */
+/* line 3, ../scss/main.scss */
+html, body {
+  margin-top: 0;
+}
+
+/* line 6, ../scss/main.scss */
 .content {
   height: 100vh;
+  background-image: url("https://farm4.staticflickr.com/3262/3159517227_65c6a84332_b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 11, ../scss/main.scss */
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: lightgray;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+/* line 13, ../scss/main.scss */
+footer a {
+  text-decoration: none !important;
+  color: lightgray !important;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 19, ../scss/main.scss */
+footer a:hover {
+  color: green !important;
 }
