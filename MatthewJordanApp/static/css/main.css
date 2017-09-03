@@ -343,25 +343,26 @@ a {
 
 /* line 60, ../scss/main.scss */
 footer {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: lightgray;
-  text-decoration: none;
-  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #99979c;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+  background-color: #2a2730;
 }
 /* line 62, ../scss/main.scss */
-footer a {
-  text-decoration: none !important;
-  color: lightgray !important;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-/* line 68, ../scss/main.scss */
 footer a:hover {
-  color: green !important;
+  color: white !important;
+}
+/* line 66, ../scss/main.scss */
+footer .bs-docs-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+/* line 70, ../scss/main.scss */
+footer .bs-docs-footer-links li {
+  display: inline-block;
+}
+/* line 73, ../scss/main.scss */
+footer .bs-docs-footer-links li + li {
+  margin-left: 15px;
 }

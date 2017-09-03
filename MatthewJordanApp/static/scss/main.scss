@@ -59,21 +59,28 @@ a {
 
 footer {
 
-    a {
-        text-decoration: none !important;
-        color: lightgray !important;
-        @include transitions(0.5s);
-    }
-
     a:hover {
-        color: green !important;
+        color: white !important;
     }
 
-    background-color: rgba(0,0,0,0.5);
-    color: lightgray;
-    text-decoration: none;
-    width: 100%;
+    .bs-docs-footer-links {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+    .bs-docs-footer-links li {
+        display: inline-block;
+    }
+    .bs-docs-footer-links li + li {
+        margin-left: 15px;
+    }
+
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // margin-top: 100px;
+    color: #99979c;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    background-color: #2a2730;
+    // position: fixed;
+    // bottom: 0;
 }
