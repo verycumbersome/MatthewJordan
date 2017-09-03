@@ -8,7 +8,24 @@ html, body, div {
 
 .main-content {
     height: 100vh !important;
-    // color: white;
+
+    .link a {
+        text-decoration: none;
+        @include transitions(0.5s);
+    }
+
+    .link:hover a {
+        color: white
+    }
+
+    // .resume a{
+    //     text-decoration: none;
+    //     @include transitions(0.5s);
+    // }
+    //
+    // .resume:hover a {
+    //     color: white
+    // }
 
     @include backgroundImage('https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg');
 }

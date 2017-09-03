@@ -60,7 +60,7 @@ html, body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: orange;
 }
 
 .container {
@@ -74,19 +74,6 @@ a {
 
 .row {
     flex-direction: row;
-}
-
-.hint {
-    color: #ffffff;
-    display: flex;
-    height: 10vh;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.hint:first-of-type {
-    top: 99vh;
 }
 
 .section {
@@ -107,75 +94,6 @@ a {
 .section:not(:first-child) {
     padding-top: 125px;
     background-color: #f3f3f3;
-}
-
-#contact {
-    padding-top: 0;
-}
-
-.work-list {
-    margin: 50px !important;
-    width: 100%;
-    max-width: 800px;
-}
-
-.work-table {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.work-dates {
-    width: 30%;
-    display: block;
-    text-align: end;
-    margin-right: 20px;
-}
-
-.work-body {
-    width: 70%;
-}
-
-.project-list {
-    margin: 50px !important;
-    width: 100%;
-    max-width: 800px;
-}
-
-.project-table {
-    width: 100%;
-}
-
-.project-name {}
-
-.project-body {
-    padding-left: 20px;
-}
-
-.skill-category:first-of-type {
-    margin-top: 50px;
-}
-
-.skill-list {
-    margin: 50px !important;
-    width: 100%;
-    max-width: 800px;
-}
-
-.skill-table {
-    width: 100%;
-}
-
-.skill-name {}
-
-.skill-body {
-    padding-left: 20px;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
 }
 
 .profile-pic {

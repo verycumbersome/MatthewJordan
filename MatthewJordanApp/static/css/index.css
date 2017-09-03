@@ -67,7 +67,7 @@ html, body {
 /* line 61, ../scss/index.scss */
 a {
   text-decoration: none;
-  color: black;
+  color: orange;
 }
 
 /* line 66, ../scss/index.scss */
@@ -87,21 +87,6 @@ a {
 }
 
 /* line 79, ../scss/index.scss */
-.hint {
-  color: #ffffff;
-  display: flex;
-  height: 10vh;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* line 88, ../scss/index.scss */
-.hint:first-of-type {
-  top: 99vh;
-}
-
-/* line 92, ../scss/index.scss */
 .section {
   width: 100%;
   z-index: 1;
@@ -113,96 +98,18 @@ a {
   justify-content: center;
 }
 
-/* line 103, ../scss/index.scss */
+/* line 90, ../scss/index.scss */
 .section:first-child {
   height: 90vh;
 }
 
-/* line 107, ../scss/index.scss */
+/* line 94, ../scss/index.scss */
 .section:not(:first-child) {
   padding-top: 125px;
   background-color: #f3f3f3;
 }
 
-/* line 112, ../scss/index.scss */
-#contact {
-  padding-top: 0;
-}
-
-/* line 116, ../scss/index.scss */
-.work-list {
-  margin: 50px !important;
-  width: 100%;
-  max-width: 800px;
-}
-
-/* line 122, ../scss/index.scss */
-.work-table {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-/* line 128, ../scss/index.scss */
-.work-dates {
-  width: 30%;
-  display: block;
-  text-align: end;
-  margin-right: 20px;
-}
-
-/* line 135, ../scss/index.scss */
-.work-body {
-  width: 70%;
-}
-
-/* line 139, ../scss/index.scss */
-.project-list {
-  margin: 50px !important;
-  width: 100%;
-  max-width: 800px;
-}
-
-/* line 145, ../scss/index.scss */
-.project-table {
-  width: 100%;
-}
-
-/* line 151, ../scss/index.scss */
-.project-body {
-  padding-left: 20px;
-}
-
-/* line 155, ../scss/index.scss */
-.skill-category:first-of-type {
-  margin-top: 50px;
-}
-
-/* line 159, ../scss/index.scss */
-.skill-list {
-  margin: 50px !important;
-  width: 100%;
-  max-width: 800px;
-}
-
-/* line 165, ../scss/index.scss */
-.skill-table {
-  width: 100%;
-}
-
-/* line 171, ../scss/index.scss */
-.skill-body {
-  padding-left: 20px;
-}
-
-/* line 175, ../scss/index.scss */
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-}
-
-/* line 181, ../scss/index.scss */
+/* line 99, ../scss/index.scss */
 .profile-pic {
   transition: .5s;
   margin-left: 10px;
@@ -211,12 +118,12 @@ a {
   -webkit-filter: invert(1%);
 }
 
-/* line 189, ../scss/index.scss */
+/* line 107, ../scss/index.scss */
 .profile-pic:hover {
   -webkit-filter: invert(30%);
 }
 
-/* line 193, ../scss/index.scss */
+/* line 111, ../scss/index.scss */
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -225,7 +132,7 @@ a {
   margin-right: 15px;
 }
 
-/* line 201, ../scss/index.scss */
+/* line 119, ../scss/index.scss */
 .profile-pic, .front, .back {
   width: 144px;
   height: 144px;
