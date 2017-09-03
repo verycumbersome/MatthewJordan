@@ -342,6 +342,19 @@ a {
 }
 
 /* line 60, ../scss/main.scss */
+#toolbox {
+  background-attachment: fixed;
+  background-image: url("https://newevolutiondesigns.com/images/freebies/google-material-design-wallpaper-20.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 61, ../scss/main.scss */
+#toolbox h1 {
+  color: white;
+}
+
+/* line 69, ../scss/main.scss */
 footer {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -349,20 +362,20 @@ footer {
   text-align: center;
   background-color: #2a2730;
 }
-/* line 62, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 footer a:hover {
   color: white !important;
 }
-/* line 66, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 footer .bs-docs-footer-links {
   padding-left: 0;
   margin-bottom: 20px;
 }
-/* line 70, ../scss/main.scss */
+/* line 79, ../scss/main.scss */
 footer .bs-docs-footer-links li {
   display: inline-block;
 }
-/* line 73, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 footer .bs-docs-footer-links li + li {
   margin-left: 15px;
 }
