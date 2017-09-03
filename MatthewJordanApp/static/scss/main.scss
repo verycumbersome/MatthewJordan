@@ -46,6 +46,17 @@ a {
     transform: translate3d(0, -0.5%, 0);
 }
 
+#works {
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: orange;
+    }
+}
+
 footer {
 
     a {

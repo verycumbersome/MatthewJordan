@@ -332,7 +332,16 @@ a {
   transform: translate3d(0, -0.5%, 0);
 }
 
-/* line 49, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
+#works a {
+  color: black;
+}
+/* line 55, ../scss/main.scss */
+#works a:hover {
+  color: orange;
+}
+
+/* line 60, ../scss/main.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
@@ -342,7 +351,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
-/* line 51, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 footer a {
   text-decoration: none !important;
   color: lightgray !important;
@@ -352,7 +361,7 @@ footer a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 57, ../scss/main.scss */
+/* line 68, ../scss/main.scss */
 footer a:hover {
   color: green !important;
 }
