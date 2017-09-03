@@ -3,9 +3,25 @@
 html, body {
     margin-top: 0;
 }
-.content {
+
+// .row {
+//
+// }
+//
+.container {
     height: 100vh;
     @include backgroundImage('https://farm4.staticflickr.com/3262/3159517227_65c6a84332_b.jpg');
+
+    .content {
+        width: 30%;
+        margin-top: 35vh;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        background-color: rgba(0,0,0,0.4);
+        height: 200px;
+        border-radius: 3px;
+    }
 }
 
 footer {
