@@ -101,11 +101,13 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 1.75em;
-    -webkit-filter: invert(1%);
+    @include box_shadow(1);
 }
 
 .profile-pic:hover {
-    -webkit-filter: invert(30%);
+    @include box_shadow(4);
+    -webkit-transform: translate3d(0, -5%, 0);
+    transform: translate3d(0, -5%, 0);
 }
 
 .flip-container {

@@ -91,31 +91,31 @@
     transform: none;
   }
 }
-/* line 97, ../scss/_mixins.scss */
+/* line 112, ../scss/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 101, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 105, ../scss/_mixins.scss */
+/* line 120, ../scss/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 110, ../scss/_mixins.scss */
+/* line 125, ../scss/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 114, ../scss/_mixins.scss */
+/* line 129, ../scss/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -123,13 +123,13 @@
   animation-fill-mode: both;
 }
 
-/* line 120, ../scss/_mixins.scss */
+/* line 135, ../scss/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 124, ../scss/_mixins.scss */
+/* line 139, ../scss/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -251,15 +251,17 @@ a {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 1.75em;
-  -webkit-filter: invert(1%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /* line 107, ../scss/index.scss */
 .profile-pic:hover {
-  -webkit-filter: invert(30%);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translate3d(0, -5%, 0);
+  transform: translate3d(0, -5%, 0);
 }
 
-/* line 111, ../scss/index.scss */
+/* line 113, ../scss/index.scss */
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -268,7 +270,7 @@ a {
   margin-right: 15px;
 }
 
-/* line 119, ../scss/index.scss */
+/* line 121, ../scss/index.scss */
 .profile-pic, .front, .back {
   width: 144px;
   height: 144px;
@@ -282,6 +284,13 @@ html, body, div {
 }
 
 /* line 9, ../scss/main.scss */
+.paragraph-text {
+  width: 60%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* line 15, ../scss/main.scss */
 .main-content {
   height: 100vh !important;
   background-image: url("https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg");
@@ -289,7 +298,7 @@ html, body, div {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 12, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 .main-content .link a {
   text-decoration: none;
   -o-transition: 0.5s;
@@ -298,12 +307,12 @@ html, body, div {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 17, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 .main-content .link:hover a {
   color: white;
 }
 
-/* line 33, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
@@ -313,7 +322,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
-/* line 35, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 footer a {
   text-decoration: none !important;
   color: lightgray !important;
@@ -323,7 +332,7 @@ footer a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 41, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 footer a:hover {
   color: green !important;
 }

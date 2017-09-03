@@ -1,140 +1,72 @@
-@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
-/* line 2, ../scss/index.scss */
-body, body * {
-  transform: translate3d(0, 0, 0);
-}
+/*
+Error: Undefined mixin 'box_shadow'.
+        on line 104 of /Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss, in `box_shadow'
+        from line 104 of /Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss
 
-/* line 6, ../scss/index.scss */
-h1 {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.20;
-  font-weight: 700;
-  opacity: 1.0;
-  letter-spacing: -0.72px;
-  word-spacing: 0;
-  text-transform: none;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+99: .profile-pic {
+100:     transition: .5s;
+101:     margin-left: 10px;
+102:     margin-right: 10px;
+103:     font-size: 1.75em;
+104:     @include box_shadow(1);
+105: }
+106: 
+107: .profile-pic:hover {
+108:     @include box_shadow(4);
+109:     -webkit-transform: translate3d(0, -5%, 0);
 
-/* line 18, ../scss/index.scss */
-h2 {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4;
-  font-weight: 600;
-  opacity: 1.0;
-  letter-spacing: -0.72px;
-  word-spacing: 0;
-  text-transform: none;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-/* line 30, ../scss/index.scss */
-h3 {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.4;
-  font-weight: 400;
-  opacity: 0.9;
-  letter-spacing: 0;
-  word-spacing: 0;
-  text-transform: none;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-/* line 42, ../scss/index.scss */
-span, p {
-  font-family: "Open Sans", sans-serif;
-  line-height: 2;
-  font-weight: 400;
-  opacity: 0.7;
-  letter-spacing: -0.06px;
-  word-spacing: 0;
-  text-transform: none;
-  margin-top: 0;
-}
-
-/* line 53, ../scss/index.scss */
-html, body {
-  width: 100%;
-  margin: 0;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 61, ../scss/index.scss */
-a {
-  text-decoration: none;
-  color: orange;
-}
-
-/* line 66, ../scss/index.scss */
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 71, ../scss/index.scss */
-.text-container {
-  color: #ffffff;
-}
-
-/* line 75, ../scss/index.scss */
-.row {
-  flex-direction: row;
-}
-
-/* line 79, ../scss/index.scss */
-.section {
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-/* line 90, ../scss/index.scss */
-.section:first-child {
-  height: 90vh;
-}
-
-/* line 94, ../scss/index.scss */
-.section:not(:first-child) {
-  padding-top: 125px;
-  background-color: #f3f3f3;
-}
-
-/* line 99, ../scss/index.scss */
-.profile-pic {
-  transition: .5s;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 1.75em;
-  -webkit-filter: invert(1%);
-}
-
-/* line 107, ../scss/index.scss */
-.profile-pic:hover {
-  -webkit-filter: invert(30%);
-}
-
-/* line 111, ../scss/index.scss */
-.flip-container {
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
-  margin-right: 15px;
-}
-
-/* line 119, ../scss/index.scss */
-.profile-pic, .front, .back {
-  width: 144px;
-  height: 144px;
-  border-radius: 50% !important;
-}
+Backtrace:
+/Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss:104:in `box_shadow'
+/Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss:104
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/matthewjordan/.rvm/gems/ruby-2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'box_shadow'.\A         on line 104 of /Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss, in `box_shadow'\A         from line 104 of /Users/matthewjordan/Code/MatthewJordan/MatthewJordanApp/static/scss/index.scss\A \A 99: .profile-pic {\A 100:     transition: .5s;\A 101:     margin-left: 10px;\A 102:     margin-right: 10px;\A 103:     font-size: 1.75em;\A 104:     @include box_shadow(1);\A 105: }\A 106: \A 107: .profile-pic:hover {\A 108:     @include box_shadow(4);\A 109:     -webkit-transform: translate3d(0, -5%, 0);"; }
