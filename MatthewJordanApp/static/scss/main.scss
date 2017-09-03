@@ -7,7 +7,7 @@ html, body, div {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: orange;
     @include transitions(0.5s);
 }
@@ -30,6 +30,8 @@ a {
     }
 
     @include backgroundImage('https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg');
+
+    background-attachment: fixed;
 }
 
 .card {

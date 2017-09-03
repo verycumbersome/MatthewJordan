@@ -279,7 +279,7 @@ html, body, div {
 
 /* line 9, ../scss/main.scss */
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: orange;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -307,13 +307,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 /* line 28, ../scss/main.scss */
 .main-content .link:hover a {
   color: white;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 37, ../scss/main.scss */
 .card {
   border: 0px;
   -o-transition: 0.5s;
@@ -324,14 +325,14 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 41, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 .card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-transform: translate3d(0, -0.5%, 0);
   transform: translate3d(0, -0.5%, 0);
 }
 
-/* line 47, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
@@ -341,7 +342,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
-/* line 49, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 footer a {
   text-decoration: none !important;
   color: lightgray !important;
@@ -351,7 +352,7 @@ footer a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 55, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 footer a:hover {
   color: green !important;
 }
