@@ -201,28 +201,22 @@ html, body {
 }
 
 /* line 61, ../scss/index.scss */
-a {
-  text-decoration: none;
-  color: orange;
-}
-
-/* line 66, ../scss/index.scss */
 .container {
   display: flex;
   flex-direction: column;
 }
 
-/* line 71, ../scss/index.scss */
+/* line 66, ../scss/index.scss */
 .text-container {
   color: #ffffff;
 }
 
-/* line 75, ../scss/index.scss */
+/* line 70, ../scss/index.scss */
 .row {
   flex-direction: row;
 }
 
-/* line 79, ../scss/index.scss */
+/* line 74, ../scss/index.scss */
 .section {
   width: 100%;
   z-index: 1;
@@ -234,18 +228,18 @@ a {
   justify-content: center;
 }
 
-/* line 90, ../scss/index.scss */
+/* line 85, ../scss/index.scss */
 .section:first-child {
   height: 90vh;
 }
 
-/* line 94, ../scss/index.scss */
+/* line 89, ../scss/index.scss */
 .section:not(:first-child) {
   padding-top: 125px;
   background-color: #f3f3f3;
 }
 
-/* line 99, ../scss/index.scss */
+/* line 94, ../scss/index.scss */
 .profile-pic {
   transition: .5s;
   margin-left: 10px;
@@ -254,14 +248,14 @@ a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 107, ../scss/index.scss */
+/* line 102, ../scss/index.scss */
 .profile-pic:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   -webkit-transform: translate3d(0, -5%, 0);
   transform: translate3d(0, -5%, 0);
 }
 
-/* line 113, ../scss/index.scss */
+/* line 108, ../scss/index.scss */
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -270,7 +264,7 @@ a {
   margin-right: 15px;
 }
 
-/* line 121, ../scss/index.scss */
+/* line 116, ../scss/index.scss */
 .profile-pic, .front, .back {
   width: 144px;
   height: 144px;
@@ -284,13 +278,29 @@ html, body, div {
 }
 
 /* line 9, ../scss/main.scss */
+a {
+  text-decoration: none;
+  color: orange;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 15, ../scss/main.scss */
+.card-link:hover {
+  color: black;
+}
+
+/* line 19, ../scss/main.scss */
 .paragraph-text {
   width: 60%;
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-/* line 15, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 .main-content {
   height: 100vh !important;
   background-image: url("https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg");
@@ -298,21 +308,30 @@ html, body, div {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 18, ../scss/main.scss */
-.main-content .link a {
-  text-decoration: none;
+/* line 28, ../scss/main.scss */
+.main-content .link:hover a {
+  color: white;
+}
+
+/* line 35, ../scss/main.scss */
+.card {
+  border: 0px;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-/* line 23, ../scss/main.scss */
-.main-content .link:hover a {
-  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 39, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translate3d(0, -0.5%, 0);
+  transform: translate3d(0, -0.5%, 0);
+}
+
+/* line 47, ../scss/main.scss */
 footer {
   background-color: rgba(0, 0, 0, 0.5);
   color: lightgray;
@@ -322,7 +341,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
-/* line 41, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 footer a {
   text-decoration: none !important;
   color: lightgray !important;
@@ -332,7 +351,7 @@ footer a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-/* line 47, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 footer a:hover {
   color: green !important;
 }

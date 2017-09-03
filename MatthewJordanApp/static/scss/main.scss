@@ -6,6 +6,16 @@ html, body, div {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: orange;
+    @include transitions(0.5s);
+}
+
+.card-link:hover {
+    color: black;
+}
+
 .paragraph-text {
     width: 60%;
     min-width: 200px;
@@ -15,25 +25,23 @@ html, body, div {
 .main-content {
     height: 100vh !important;
 
-    .link a {
-        text-decoration: none;
-        @include transitions(0.5s);
-    }
-
     .link:hover a {
         color: white
     }
 
-    // .resume a{
-    //     text-decoration: none;
-    //     @include transitions(0.5s);
-    // }
-    //
-    // .resume:hover a {
-    //     color: white
-    // }
-
     @include backgroundImage('https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg');
+}
+
+.card {
+    border: 0px;
+    @include transitions(0.5s);
+    @include box_shadow(1);
+}
+
+.card:hover {
+    @include box_shadow(3);
+    -webkit-transform: translate3d(0, -0.5%, 0);
+    transform: translate3d(0, -0.5%, 0);
 }
 
 footer {
