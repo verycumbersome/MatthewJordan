@@ -1,27 +1,16 @@
 @import 'mixins';
+@import 'index';
 
-html, body {
+html, body, div {
     margin-top: 0;
+    padding: 0;
 }
 
-// .row {
-//
-// }
-//
-.container {
-    height: 100vh;
-    @include backgroundImage('https://farm4.staticflickr.com/3262/3159517227_65c6a84332_b.jpg');
+.main-content {
+    height: 100vh !important;
+    // color: white;
 
-    .content {
-        width: 30%;
-        margin-top: 35vh;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        background-color: rgba(0,0,0,0.4);
-        height: 200px;
-        border-radius: 3px;
-    }
+    @include backgroundImage('https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg');
 }
 
 footer {

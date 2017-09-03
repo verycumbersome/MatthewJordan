@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-<div class='container'>
-    <div class='container-fluid'>
-        <div class='row'>
-            <h1>Matthew Jordan</h1>
+<div class='section main-content'>
+    <div class='container animated fadeInRight row'>
+        <div class='flip-container'>
+            <img class='profile-pic' src='{% static 'images/profile.jpg' %}'></img>
         </div>
-        <div class='row'>
-            <h1>Matthew Jordan</h1>
+        <div class='text-container'>
+            <div class='name'><h2>Matthew Jordan</h2></div>
+            <div class='resume'><h2>Resume</h2></div>
+            <div class='email'><h3>matthewsages@gmail.com</h3></div>
+            <div class='twitter'><h3>@jordanma1998</h3></div>
         </div>
     </div>
+
 </div>
 {% endblock %}
