@@ -1,0 +1,422 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 112, ../scss/_mixins.scss */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* line 116, ../scss/_mixins.scss */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+/* line 120, ../scss/_mixins.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/* line 125, ../scss/_mixins.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/* line 129, ../scss/_mixins.scss */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 135, ../scss/_mixins.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 139, ../scss/_mixins.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 2, ../scss/index.scss */
+body, body * {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 6, ../scss/index.scss */
+h1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.20;
+  font-weight: 700;
+  opacity: 1.0;
+  letter-spacing: -0.72px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 18, ../scss/index.scss */
+h2 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  opacity: 1.0;
+  letter-spacing: -0.72px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 30, ../scss/index.scss */
+h3 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 42, ../scss/index.scss */
+span, p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: -0.06px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+}
+
+/* line 53, ../scss/index.scss */
+html, body {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 61, ../scss/index.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 66, ../scss/index.scss */
+.text-container {
+  color: #ffffff;
+}
+
+/* line 70, ../scss/index.scss */
+.row {
+  flex-direction: row;
+}
+
+/* line 74, ../scss/index.scss */
+.section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 85, ../scss/index.scss */
+.section:first-child {
+  height: 90vh;
+}
+
+/* line 89, ../scss/index.scss */
+.section:not(:first-child) {
+  padding-top: 125px;
+  background-color: #f3f3f3;
+}
+
+/* line 94, ../scss/index.scss */
+.profile-pic {
+  transition: .5s;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.75em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 102, ../scss/index.scss */
+.profile-pic:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translate3d(0, -5%, 0);
+  transform: translate3d(0, -5%, 0);
+}
+
+/* line 108, ../scss/index.scss */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin-right: 15px;
+}
+
+/* line 116, ../scss/index.scss */
+.profile-pic, .front, .back {
+  width: 144px;
+  height: 144px;
+  border-radius: 50% !important;
+}
+
+@media (max-width: 640px) {
+  /* line 123, ../scss/index.scss */
+  .profile-pic {
+    display: none;
+  }
+}
+/* line 129, ../scss/index.scss */
+.autoscroll {
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  position: absolute;
+}
+/* line 135, ../scss/index.scss */
+.autoscroll a {
+  bottom: 0;
+  color: white;
+  text-decoration: none;
+}
+/* line 141, ../scss/index.scss */
+.autoscroll .scrollbox {
+  top: 0;
+}
+/* line 144, ../scss/index.scss */
+.autoscroll .scrollbox .glyphicon {
+  font-size: 25px;
+}
+/* line 149, ../scss/index.scss */
+.autoscroll .scrolldown {
+  font-size: 3em;
+  position: absolute;
+  margin-left: -19px;
+  margin-bottom: -14px;
+}
+/* line 156, ../scss/index.scss */
+.autoscroll .scrolldownarrow {
+  font-size: 1.3em;
+  z-index: -1;
+  display: block;
+}
+
+/* line 4, ../scss/main.scss */
+html, body, div {
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 9, ../scss/main.scss */
+a {
+  text-decoration: none !important;
+  color: orange;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 15, ../scss/main.scss */
+.card-link:hover {
+  color: black;
+}
+
+/* line 19, ../scss/main.scss */
+.paragraph-text {
+  width: 60%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* line 25, ../scss/main.scss */
+.main-content {
+  height: 100vh !important;
+  background-image: url("https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 28, ../scss/main.scss */
+.main-content .link:hover a {
+  color: white;
+}
+
+/* line 37, ../scss/main.scss */
+.card {
+  border: 0px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 43, ../scss/main.scss */
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translate3d(0, -0.5%, 0);
+  transform: translate3d(0, -0.5%, 0);
+}
+
+/* line 51, ../scss/main.scss */
+#works a {
+  color: black;
+}
+/* line 55, ../scss/main.scss */
+#works a:hover {
+  color: orange;
+}
+
+/* line 60, ../scss/main.scss */
+#toolbox {
+  background-attachment: fixed;
+  background-image: url("https://newevolutiondesigns.com/images/freebies/google-material-design-wallpaper-20.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 61, ../scss/main.scss */
+#toolbox h1 {
+  color: white;
+}
+
+/* line 69, ../scss/main.scss */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+}
+/* line 71, ../scss/main.scss */
+footer a:hover {
+  color: white !important;
+}
+/* line 75, ../scss/main.scss */
+footer .bs-docs-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+/* line 79, ../scss/main.scss */
+footer .bs-docs-footer-links li {
+  display: inline-block;
+}
+/* line 82, ../scss/main.scss */
+footer .bs-docs-footer-links li + li {
+  margin-left: 15px;
+}
