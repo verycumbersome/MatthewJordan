@@ -1,0 +1,423 @@
+@font-face{
+	font-family: "Adobe Garamond";
+	src: url('Fonts/Garamond/AGaramondPro-Regular.otf');
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+body{
+	font-family: "Adobe Garamond";
+  text-align: center;
+  position: absolute;
+  overflow: inherit;
+  /*background-color: #F1Efea;*/
+  /*background-image: url('images/artworks-000201096460-cry68y-t500x500.jpg');*/
+
+}
+
+
+h1{
+  font-size: 11vh;
+	letter-spacing: 3px;
+	color:#F1Efea;
+	
+}
+
+
+#title{
+    position: relative;
+    margin: auto;
+    /*overflow-x: hidden;*/
+    width: 82%;
+    height: auto;
+    border: 2px solid black;
+    text-align: center;
+    color:#F1Efea;
+}
+
+/*alternating background*/
+
+/* Basic background image styling. */
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: inherit;
+	color: inherit;
+	transition: opacity 3s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('/images/Wallpapers/Whisper-of-the-Heart-whisper-of-the-heart-30619610-1920-1080.jpg');
+	z-index: -8;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('/images/Wallpapers/garden-of-words-fallen-leaves-flowers-rain-1920x1080-wallpaper.jpg');
+	z-index: -7;
+	opacity: 0;
+}
+
+.fourth-image {
+	background-image: url('/images/Wallpapers/605495.jpg');
+	z-index: -6;
+	opacity: 0;
+}
+
+/*.third-image{*/
+/*  background-image: url('/images/Wallpapers/Whisperoftheheartwallpaper.png');*/
+/*  z-index: -5;*/
+/*  opacity: 0;*/
+/*}*/
+
+.fifth-image {
+	background-image: url('/images/Wallpapers/6TG6qc6.jpg');
+	z-index: -4;
+	opacity: 0;
+}
+
+/*.sixth-image {*/
+/*	background-image: url('/images/Wallpapers/2utRmwZ.jpg');*/
+/*	z-index: -3;*/
+/*	opacity: 0;*/
+/*}*/
+
+.seventh-image {
+	background-image: url('/images/Wallpapers/only_yesterday_14.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.eigth-image {
+	background-image: url('/images/Wallpapers/tumblr_mo107yEaoS1sor8q8o8_1280.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.fourth-image.show {
+	opacity: 1;
+}
+
+.fifth-image.show {
+	opacity: 1;
+}
+
+.sixth-image.show {
+	opacity: 1;
+}
+
+.seventh-image.show {
+	opacity: 1;
+}
+
+.eigth-image.show {
+	opacity: 1;
+}
+
+/*Menu*/
+
+#menu{
+  left: 0;
+  right: 0;
+  font-size: 0;
+  width: 82%;
+  /*height: 65px;*/
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2.5%;
+  border: 2px solid black;
+ 
+}
+
+.menuitem{
+  padding-top: 2px;
+  font-size: 16pt;
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  white-space: nowrap;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.menuitem:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.fixed {
+  position: fixed; 
+	top: 0; 
+	z-index: 2;
+}
+
+.bar {
+  width: 100%;
+  margin-bottom: 0;
+  white-space: nowrap;
+  /*background: red;*/
+}
+
+.dropdown {
+  /*width: 100%;*/
+  /*position: absolute;*/
+  max-height: 100%;
+  z-index: 19;
+  /*background: yellow;*/
+}
+
+#dropdownwrapper {
+  padding: 0;
+  margin: 0;
+  width: inherit;
+  list-style-type: none;
+  /*color: green;*/
+}
+
+.genericfa {
+  width: 80.1%;
+  padding: 10%;
+  white-space: pre-wrap;
+  background-color: #99a3a3;
+  color: white;
+  font-size: 2vh;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+}
+
+.fa {
+  padding: 10%;
+  width: 80.1%;
+  text-decoration: none;
+}
+
+.fa-youtube {
+    background: rgb(187, 0, 0);
+    color: white;
+}
+
+.fa-spotify {
+    background: rgb(30, 215, 95);
+    color: white;
+}
+
+.fa-soundcloud {
+    background: rgb(255, 102, 1);
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-apple {
+    color: white;
+    background: #999999;
+}
+
+.fa-bandcamp {
+    background: rgb(97, 146, 156);
+    color: white;
+}
+
+.fa-instagram {
+  background: #9b6954;
+  color: white;
+}
+
+.fa-envelope-o {
+  background-color: #99a3a3;
+  color: white;
+}
+
+.fa:hover {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/*Mosaic*/
+
+#mosaicbackground{
+  text-align: center;
+  margin: auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  width: 82%;
+  height: auto;
+  font-size: 0pt;
+  /*background: red;*/
+  overflow: scale;
+}
+
+#mosaicsoundcloud {
+  z-index: 3;
+}
+
+.tile{
+  background-color: #99a3a3;
+  position:relative;
+  display: inline-block;
+  width: 33.333%;
+  height: 33.333%;
+  /*width: 275pt;*/
+  /*height: 275pt;*/
+  /*border: black 1px solid;*/
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.tile:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   background-color: #99a3a3;
+}
+
+.over{
+    opacity:0;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #99a3a3;
+    width:100%;
+    height:100%;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.tile:hover  .over{
+    opacity:1;
+}
+
+/*extra bits*/
+
+.overlay{
+    opacity:1;
+    background-color:#F1Efea;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    overflow: hidden;
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+footer{
+  font-size: 10px;
+}
+
+
+/*PACE*/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  z-index: 2000;
+  position: fixed;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.pace.pace-inactive .pace-activity {
+  display: none;
+}
+
+.pace .pace-activity {
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+  height: 90px;
+  width: 90px;
+  display: block;
+  border-width: 30px;
+  border-style: double;
+  border-color: #99a3a3 transparent transparent;
+  border-radius: 50%;
+
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+.pace .pace-activity:before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  display: block;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #99a3a3  transparent transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  100% { -webkit-transform: rotate(359deg); }
+}
+
+@-moz-keyframes spin {
+  100% { -moz-transform: rotate(359deg); }
+}
+
+@-o-keyframes spin {
+  100% { -moz-transform: rotate(359deg); }
+}
+
+@keyframes spin {
+  100% {  transform: rotate(359deg); }
+}
+
+.pace-running > *:not(.pace) {
+  opacity:0;
+}
