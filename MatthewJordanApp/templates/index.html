@@ -59,35 +59,12 @@
 
 <div id='works' class='section'>
     <h1>Works</h1>
-    <h4><a href='https://github.com/SouthEugeneRoboticsTeam/vision'>FRC Vision Processing</a></h4>
+    {% for work in works %}
+    <h4><a href='{{work.link}}'>{{work}}</a></h4>
     <p class='paragraph-text'>
-        This is the vision proccess that our team had running in parrallel on a minnowboard for
-        the 2017 FRC challenge Steamworks. It uses OpenCv to threshold images and return the
-        position relative to the camera and uses the offset to aling the robot.
+        {{work.content}}
     </p>
-    <h4><a href='https://github.com/verycumbersome/InteractiveOutdoorNetwork'>IOP Class Website</a></h4>
-    <p class='paragraph-text'>
-        This website was created to help manage and organize one of my school classes Interactive
-        Outdoor Program. The class is designed to integrate teenagers with the wilderness by
-        allowing and encouraging outdoor activities. One of the goals of this website was to help
-        promote and organize outdoor activity. The website is built on the Django python framework
-        and is being hosted through WSGI on pythonanywhere.com.
-    </p>
-    <h4><a href='https://github.com/verycumbersome/JordanLaw'>Jordan Law Website</a></h4>
-    <p class='paragraph-text'>
-        This was a project I developed for a local law firm designed to update the existing website
-        with with not only an improved UI but also for more dynamic flexibility. I achieved this
-        through Django with models for easy-to-make blog posts for the client. The site is hosted
-        on Heroku through WSGI.
-    </p>
-    <h4><a href='https://github.com/verycumbersome/MattMusic'>Matt Music</a></h4>
-    <p class='paragraph-text'>
-        This project was just a little fun to see if I could write a program to write music using
-        the guidelines of music theory to write chord progressions and a melody that followed. The
-        project ended up being pretty cool and I learned a bit about nueral networks as well as
-        markov chains. In the end this was just a fun little project I thought was pretty cool.
-    </p>
-
+    {% endfor %}
 </div>
 <div id='toolbox' class='section'>
     <h1>Toolbox</h1>
